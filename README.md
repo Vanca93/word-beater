@@ -1,2 +1,2 @@
 # word-beater
-Used for adding features (localStorage for highscore, choosing difficulty)
+A speed typing game based on Vanilla JS code.
