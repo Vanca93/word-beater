@@ -149,8 +149,8 @@ function init() {
     showWord(words);
     wordInput.addEventListener('input', startMatch);
     setInterval(countdown, 1000);
-    setInterval(checkStatus, 1);
-    setInterval(highScore, 1);
+    setInterval(checkStatus, 50);
+    setInterval(highScore, 50);
 }
 
 function startMatch() {
@@ -170,7 +170,7 @@ function startMatch() {
 
 function matchWords() {
     if(wordInput.value === currentWord.innerHTML) {
-        message.innerHTML = 'Correct!!!';
+        message.innerHTML = 'Correct!';
         return true;
     } else {
         message.innerHTML = '';
@@ -194,7 +194,7 @@ function countdown() {
 
 function checkStatus() {
     if(!isPlaying && time === 0) {
-        message.innerHTML = 'Game over!!!';
+        message.innerHTML = 'Game over! Type The Word Above To Start Again!';
         score = -1;
     }
 }
