@@ -131,21 +131,18 @@ function init() {
     easy.addEventListener('click', function() {
         currentLevel = levels.easy;
         document.getElementById('seconds').innerHTML = currentLevel;
-        document.getElementById('time').innerHTML = currentLevel;
         document.getElementById('seconds').classList.remove('text-warning', 'text-danger');
         document.getElementById('seconds').classList.add('text-success');
     });
     medium.addEventListener('click', function() {
         currentLevel = levels.medium;
         document.getElementById('seconds').innerHTML = currentLevel;
-        document.getElementById('time').innerHTML = currentLevel;
         document.getElementById('seconds').classList.remove('text-success', 'text-danger');
         document.getElementById('seconds').classList.add('text-warning');
     });
     hard.addEventListener('click', function() {
         currentLevel = levels.hard;
         document.getElementById('seconds').innerHTML = currentLevel;
-        document.getElementById('time').innerHTML = currentLevel;
         document.getElementById('seconds').classList.remove('text-success', 'text-warning');
         document.getElementById('seconds').classList.add('text-danger');
     });
